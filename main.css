@@ -1,0 +1,115 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* 
+     * text-align: center; 
+     */
+    color: white;
+    background-color: #ff8082;
+}
+
+main {
+    background-color: #333;
+    border-radius: 5px;
+    width: 50%;
+    display: block;
+    left: 20px; top: 0; bottom: 0; right: 0;
+    position: absolute;
+    margin: auto;
+    height: 90%;
+    box-shadow: 5px 5px 5px black;
+}
+
+#title {
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 1px solid white;
+    font-weight: lighter;
+}
+
+button {
+    height: 20px;
+    width: 20px;
+    background-color: #f00;
+    border: none;
+    border-radius: 10px;
+}
+button:focus {
+    outline: none;
+}
+button:hover {
+    background-color: #d00;
+}
+button:active {
+    background-color: #900;
+}
+.complete {
+    background-color: #0f0;
+}
+.complete:hover {
+    background-color: #0d0;
+}
+.complete:active {
+    background-color: #090;
+}
+
+td {
+    padding-left: 20px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+#box {
+    overflow-y: scroll;
+    height: 82%;
+    width: 100%;
+}
+#submit_element {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    top: 0; bottom: 0; margin: auto; position: relative;
+}
+#submit_element:hover {
+    background-color: #ddd;
+}
+#submit-element:active {
+    background-color: #eee;
+}
+#new_element {
+    background-color: #444;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+    left: 0; right: 0; position: absolute;
+    overflow-x: wrap;
+}
+#new_element:focus {
+    outline: none;
+    border: 1px solid white;
+    padding: 4px;
+}
+#new-item {
+    width: 100%;
+}
+
+#fixbox {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    position: relative;
+    padding: 0;
+}
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+}
+p {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
